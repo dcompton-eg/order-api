@@ -58,21 +58,6 @@ Response(s):
 404 NOT FOUND
 ```
 
-### Delete an order by ID
-
-Request: 
-```
-DELETE http://host:port/orders/:id
-```
-
-Response(s): 
-```
-204 NO CONTENT
-
----
-404 NOT FOUND
-```
-
 ### Query for orders by location and item.
 
 Request: 
@@ -99,5 +84,4 @@ Response(s):
 
 * Add some kind of mechanism for storing orders.  For now it is fine to store orders in memory, but in the future we may want to store them in postgres or elsewhere.  Implement with this in mind.
 * Add support for retrieving an order by ID in server and client.
-* Add support for deleting an order by ID in server and client.
 * Add support for querying orders by location and item.
